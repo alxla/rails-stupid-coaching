@@ -1,0 +1,8 @@
+<h1>Put your question Dude!</h1>
+
+<form action="/ask" method='POST'>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <label for="question">Speak to your coach</label>
+  <input type="text" id="question" name="query" placeholder="what time is it?">
+  <input type="submit" value="Go on!">
+</form>
